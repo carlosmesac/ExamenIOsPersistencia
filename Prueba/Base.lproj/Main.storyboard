@@ -197,7 +197,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jc5-zj-OJo"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Otv-GM-xeE"/>
+                    <navigationItem key="navigationItem" id="Otv-GM-xeE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="5pt-jw-o6R">
+                            <connections>
+                                <action selector="deleteUser:" destination="LIv-3d-QmJ" id="DXi-dt-QSi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ageDetail" destination="AG2-Fm-MyC" id="4DX-l9-ENH"/>
                         <outlet property="cvDetail" destination="aSO-Be-qZU" id="VFG-cn-ZTD"/>

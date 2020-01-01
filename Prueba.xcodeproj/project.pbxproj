@@ -22,6 +22,7 @@
 		FB08057823BD2AED00F764F2 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08057723BD2AED00F764F2 /* AddViewController.swift */; };
 		FB08057A23BD2AFA00F764F2 /* AddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08057923BD2AFA00F764F2 /* AddModel.swift */; };
 		FB08057C23BD32F400F764F2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08057B23BD32F400F764F2 /* DetailViewController.swift */; };
+		FB08057E23BD3BB500F764F2 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08057D23BD3BB500F764F2 /* DetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FB08057723BD2AED00F764F2 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		FB08057923BD2AFA00F764F2 /* AddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModel.swift; sourceTree = "<group>"; };
 		FB08057B23BD32F400F764F2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FB08057D23BD3BB500F764F2 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				FB08057223BD224200F764F2 /* MasterModel.swift */,
 				FB08057923BD2AFA00F764F2 /* AddModel.swift */,
+				FB08057D23BD3BB500F764F2 /* DetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				FB08057623BD227000F764F2 /* Constants.swift in Sources */,
 				FB08057C23BD32F400F764F2 /* DetailViewController.swift in Sources */,
 				FB08057023BD221A00F764F2 /* PersonItem.swift in Sources */,
+				FB08057E23BD3BB500F764F2 /* DetailModel.swift in Sources */,
 				FB08055723BD1FEA00F764F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

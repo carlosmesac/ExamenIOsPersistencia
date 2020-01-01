@@ -16,7 +16,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var dniDetail: UILabel!
     @IBOutlet weak var surnameDetail: UILabel!
     @IBOutlet weak var nameDetail: UILabel!
-    var person : PersonItem? 
+    var person : PersonItem?
+    var detailModel = DetailModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +36,16 @@ class DetailViewController: UIViewController {
     
     }
 
+    @IBAction func deleteUser(_ sender: Any) {
+        detailModel.delete(dni: person!.dni) { (error) in
+            if(!error){
+                let navBar = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.navController) as? UINavigationController
+                                 
+                   self.view.window?.rootViewController = navBar
+                   self.view.window?.makeKeyAndVisible()
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 
