@@ -46,6 +46,20 @@ class DetailViewController: UIViewController {
             }
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        print("DetailViewController prepare: segue=\(String(describing: segue.identifier))")
+        
+        if segue.identifier == "MuestraDetalles" {
+                let controladorVistaDetalle  = segue.destination as! EditViewController
+            controladorVistaDetalle.person = self.person                
+                
+                controladorVistaDetalle.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controladorVistaDetalle.navigationItem.leftItemsSupplementBackButton = true
+            
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
