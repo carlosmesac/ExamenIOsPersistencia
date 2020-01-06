@@ -10,6 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var cvDetail: UILabel!
     @IBOutlet weak var ageDetail: UILabel!
     @IBOutlet weak var jobDetail: UILabel!
@@ -33,7 +34,14 @@ class DetailViewController: UIViewController {
         ageDetail.text = person?.age ?? ""
         jobDetail.text = person?.job ?? ""
         cvDetail.text = person?.cv ?? ""
-    
+        
+        let imageData: Data = UserDefaults.standard.object(forKey: person!.dni) as! Data
+        image.image = UIImage(data:imageData)
+        
+        /**
+         companies["key"]
+
+         */
     }
 
     @IBAction func deleteUser(_ sender: Any) {

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import FirebaseDatabase
 class AddModel{
-    func addPerson(name:String,surname:String,dni:String,age:String,job:String,cv:String, completion: @escaping (Bool) -> Void){
+    func addPerson(name:String,surname:String,dni:String,age:String,job:String,cv:String,image:UIImage, completion: @escaping (Bool) -> Void){
         let ref = Database.database().reference()
         ref.observeSingleEvent(of: .value) { (snapshot) in
             if(snapshot.childSnapshot(forPath: "users").hasChild(dni)){
@@ -19,17 +19,23 @@ class AddModel{
                 
                 let dictionary = ["name": name, "surname": surname, "dni": dni, "age": age, "job": job, "cv": cv]
                 ref.child("users").child(dni).setValue(dictionary)
+                let imageData = image.jpegData(compressionQuality: 1.0)
+                UserDefaults.standard.set(imageData, forKey: dni)
+                //Constants.Values.images.updateValue(image, forKey: dni)
+               // UserDefaults.standard.set(image, forKey: dni)
 
                 completion(false)
             }
         }
     }
-    func validateFields(name: String,surname:String,dni:String,age:String,job:String,cv:String, completion: @escaping (Bool,String) -> Void ) {
+    func validateFields(name: String,surname:String,dni:String,age:String,job:String,cv:String,image:UIImage, completion: @escaping (Bool,String) -> Void ) {
         //comprobamos si los campos estan llenos
         if(name.trimmingCharacters(in: .whitespacesAndNewlines)=="" ||
             surname.trimmingCharacters(in: .whitespacesAndNewlines)=="" ||
             dni.trimmingCharacters(in: .whitespacesAndNewlines)=="" ||
-            age.trimmingCharacters(in: .whitespacesAndNewlines)=="" || job.trimmingCharacters(in: .whitespacesAndNewlines)=="" || cv.trimmingCharacters(in: .whitespacesAndNewlines)==""){
+            age.trimmingCharacters(in: .whitespacesAndNewlines)=="" || job.trimmingCharacters(in: .whitespacesAndNewlines)=="" || cv.trimmingCharacters(in: .whitespacesAndNewlines)=="" ||
+            image == nil
+            ){
             
             completion(true,"Please fill in all fields")
         }else{

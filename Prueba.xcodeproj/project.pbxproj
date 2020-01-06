@@ -25,6 +25,7 @@
 		FB08057E23BD3BB500F764F2 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08057D23BD3BB500F764F2 /* DetailModel.swift */; };
 		FBAE583A23C0DDC700A15064 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAE583923C0DDC700A15064 /* EditViewController.swift */; };
 		FBAE583C23C0DF8400A15064 /* EditModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAE583B23C0DF8400A15064 /* EditModel.swift */; };
+		FBAE583F23C3CDC900A15064 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAE583E23C3CDC900A15064 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		FB08057D23BD3BB500F764F2 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
 		FBAE583923C0DDC700A15064 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		FBAE583B23C0DF8400A15064 /* EditModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditModel.swift; sourceTree = "<group>"; };
+		FBAE583E23C3CDC900A15064 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				FB08056223BD1FEB00F764F2 /* Info.plist */,
 				FB08056A23BD205D00F764F2 /* GoogleService-Info.plist */,
 				FB08056F23BD221A00F764F2 /* PersonItem.swift */,
+				FBAE583E23C3CDC900A15064 /* ImagePicker.swift */,
 			);
 			path = Prueba;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				FB08056E23BD21FA00F764F2 /* MasterViewController.swift in Sources */,
 				FB08057323BD224200F764F2 /* MasterModel.swift in Sources */,
 				FB08057823BD2AED00F764F2 /* AddViewController.swift in Sources */,
+				FBAE583F23C3CDC900A15064 /* ImagePicker.swift in Sources */,
 				FB08057A23BD2AFA00F764F2 /* AddModel.swift in Sources */,
 				FB08055923BD1FEA00F764F2 /* ViewController.swift in Sources */,
 				FB08055523BD1FEA00F764F2 /* AppDelegate.swift in Sources */,

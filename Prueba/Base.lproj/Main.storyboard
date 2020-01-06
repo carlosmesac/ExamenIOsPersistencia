@@ -81,11 +81,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="g7Q-Ca-jvg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="238"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="g7Q-Ca-jvg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="389"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7W5-ry-cae">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="0Nc-kV-Bpz"/>
+                                            <constraint firstAttribute="width" constant="414" id="2bF-2x-MXT"/>
+                                        </constraints>
+                                    </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ktc-xZ-8cK">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="151" width="414" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X1-bJ-dVx">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="20.5"/>
@@ -102,7 +109,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Saz-ih-ApA">
-                                        <rect key="frame" x="0.0" y="43.5" width="414" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="194.5" width="414" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEm-gZ-DRF">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="20.5"/>
@@ -119,7 +126,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OE1-eb-O66">
-                                        <rect key="frame" x="0.0" y="87" width="414" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="238" width="414" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQC-ZM-cQy">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="20.5"/>
@@ -136,7 +143,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Usr-HV-rKa">
-                                        <rect key="frame" x="0.0" y="130.5" width="414" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="281.5" width="414" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DP-0y-ymY">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="20.5"/>
@@ -153,7 +160,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vby-jv-EQ5">
-                                        <rect key="frame" x="0.0" y="174" width="414" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="325" width="414" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mos-Aa-TeU">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="20.5"/>
@@ -170,7 +177,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AAB-ST-I5D">
-                                        <rect key="frame" x="0.0" y="217.5" width="414" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="368.5" width="414" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZd-MZ-kTb">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="20.5"/>
@@ -215,6 +222,7 @@
                         <outlet property="ageDetail" destination="AG2-Fm-MyC" id="4DX-l9-ENH"/>
                         <outlet property="cvDetail" destination="aSO-Be-qZU" id="VFG-cn-ZTD"/>
                         <outlet property="dniDetail" destination="HZl-Wx-oLi" id="RlN-zy-YqY"/>
+                        <outlet property="image" destination="7W5-ry-cae" id="pkG-ay-JC6"/>
                         <outlet property="jobDetail" destination="VVd-j0-oQC" id="Prs-jy-lFm"/>
                         <outlet property="nameDetail" destination="OWF-Mg-FNp" id="74b-NR-ADF"/>
                         <outlet property="surnameDetail" destination="qY4-eJ-Xq3" id="YEd-CG-Zwp"/>
@@ -398,11 +406,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="FBL-l3-SFj">
-                                <rect key="frame" x="0.0" y="88" width="414" height="319"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="FBL-l3-SFj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="531"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iPe-0O-Q1m">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="Sph-sl-34e"/>
+                                            <constraint firstAttribute="height" constant="128" id="aBW-qy-JMx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6j-RQ-DZe">
+                                        <rect key="frame" x="0.0" y="151" width="414" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Add Image"/>
+                                        <connections>
+                                            <action selector="addImage:" destination="vQX-wa-Ihi" eventType="touchUpInside" id="k5B-A9-cge"/>
+                                        </connections>
+                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eQp-ZQ-fgb">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                        <rect key="frame" x="0.0" y="212" width="414" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afz-WD-0Qo">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="34"/>
@@ -418,7 +441,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sYI-GV-dT3">
-                                        <rect key="frame" x="0.0" y="57" width="414" height="34"/>
+                                        <rect key="frame" x="0.0" y="269" width="414" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLP-ZG-pv4">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="34"/>
@@ -434,7 +457,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ss5-iS-b1B">
-                                        <rect key="frame" x="0.0" y="114" width="414" height="34"/>
+                                        <rect key="frame" x="0.0" y="326" width="414" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6g-3v-8eN">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="34"/>
@@ -450,7 +473,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="c1u-ue-94m">
-                                        <rect key="frame" x="0.0" y="171" width="414" height="34"/>
+                                        <rect key="frame" x="0.0" y="383" width="414" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3r-gm-6Cy">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="34"/>
@@ -466,7 +489,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="K7W-aG-gg8">
-                                        <rect key="frame" x="0.0" y="228" width="414" height="34"/>
+                                        <rect key="frame" x="0.0" y="440" width="414" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLv-If-9Hf">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="34"/>
@@ -482,7 +505,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gkH-u0-PeM">
-                                        <rect key="frame" x="0.0" y="285" width="414" height="34"/>
+                                        <rect key="frame" x="0.0" y="497" width="414" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWW-Ks-zUu">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="34"/>
@@ -500,7 +523,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQW-5m-XWA">
-                                <rect key="frame" x="0.0" y="431" width="414" height="34"/>
+                                <rect key="frame" x="0.0" y="713" width="414" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -527,6 +550,7 @@
                         <outlet property="cvInput" destination="Ohn-sK-ht9" id="y63-bK-Ot9"/>
                         <outlet property="dniInput" destination="Z5A-8g-uPr" id="e0X-pz-ZWj"/>
                         <outlet property="errorLabel" destination="EQW-5m-XWA" id="GcX-hZ-JlE"/>
+                        <outlet property="image" destination="iPe-0O-Q1m" id="i17-4b-NRP"/>
                         <outlet property="jobInput" destination="lKa-St-Obx" id="h7n-HZ-qzq"/>
                         <outlet property="nameInput" destination="NCE-oM-924" id="mAe-Zt-twF"/>
                         <outlet property="surnameInput" destination="hF5-XC-MfC" id="DBy-EW-IN9"/>

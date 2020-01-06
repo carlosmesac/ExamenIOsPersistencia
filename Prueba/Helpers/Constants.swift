@@ -7,10 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
 struct Constants{
     struct Values {
         static var user = ""
         static var array: [PersonItem] = []
+        static var images:[String:UIImage] = [:]
     }
     struct Storyboard {
            static var navController = "navC"
