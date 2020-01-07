@@ -18,8 +18,8 @@ struct PersonItem {
     let job:String
     let cv:String
     let key:String
-    
-    init(name:String, surname:String, dni:String, age:String, job:String, cv:String, key:String = "") {
+    let valoracion:String
+    init(name:String, surname:String, dni:String, age:String, job:String, cv:String,valoracion:String, key:String = "") {
         self.ref = nil
         self.key = key
         self.name = name
@@ -28,6 +28,7 @@ struct PersonItem {
         self.age = age
         self.job = job
         self.cv = cv
+        self.valoracion = valoracion
     }
     
     init?(snapshot: DataSnapshot) {
@@ -38,7 +39,8 @@ struct PersonItem {
             let dni = value["dni"] as? String,
             let age = value["age"] as? String,
             let job = value["job"] as? String,
-            let cv = value["cv"] as? String
+            let cv = value["cv"] as? String,
+            let valoracion = value["valoracion"] as? String
             else {return nil}
         self.key = snapshot.key
         self.ref = snapshot.ref
@@ -47,6 +49,7 @@ struct PersonItem {
         self.dni = dni
         self.age = age
         self.job = job
+        self.valoracion = valoracion
         self.cv = cv
     }
     
@@ -57,7 +60,8 @@ struct PersonItem {
             "dni" : dni,
             "age" : age,
             "job" : job,
-            "cv" : cv
+            "cv" : cv,
+            "valoracion" : valoracion
         ]
     }
 }

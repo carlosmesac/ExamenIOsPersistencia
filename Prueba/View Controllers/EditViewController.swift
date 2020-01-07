@@ -10,6 +10,7 @@ import UIKit
 
 class EditViewController: UIViewController {
 
+    @IBOutlet weak var valoracionInput: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var nameInput: UITextField!
     @IBOutlet weak var surnameInput: UITextField!
@@ -25,6 +26,7 @@ class EditViewController: UIViewController {
     var age:String = ""
     var job:String = ""
     var cv:String = ""
+    var valoracion:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,6 +42,7 @@ class EditViewController: UIViewController {
         ageInput.text = person?.age ?? ""
         jobInput.text = person?.job ?? ""
         cvInput.text = person?.cv ?? ""
+        valoracionInput.text = person?.valoracion ?? ""
     
     }
 
@@ -50,9 +53,10 @@ class EditViewController: UIViewController {
         age = ageInput.text!
         job = jobInput.text!
         cv = cvInput.text!
-        editModel.validateFields(name: name, surname: surname, dni: dni, age: age, job: job, cv: cv) { (error, String) in
+        valoracion = valoracionInput.text!
+        editModel.validateFields(name: name, surname: surname, dni: dni, age: age, job: job, cv: cv, valoracion: valoracion) { (error, String) in
             if(!error){
-                self.editModel.editPerson(name: self.name, surname: self.surname, dni: self.dni, age: self.age, job: self.job, cv: self.cv) { (error) in
+                self.editModel.editPerson(name: self.name, surname: self.surname, dni: self.dni, age: self.age, job: self.job, cv: self.cv, valoracion: self.valoracion) { (error) in
                     if(!error){
                         let navBar = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.navController) as? UINavigationController
                                          

@@ -82,7 +82,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="g7Q-Ca-jvg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="389"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="432.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7W5-ry-cae">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
@@ -193,6 +193,23 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FkM-JW-RYQ">
+                                        <rect key="frame" x="0.0" y="412" width="414" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valoracion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4L-hq-mJC">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDf-er-CfF">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -226,6 +243,7 @@
                         <outlet property="jobDetail" destination="VVd-j0-oQC" id="Prs-jy-lFm"/>
                         <outlet property="nameDetail" destination="OWF-Mg-FNp" id="74b-NR-ADF"/>
                         <outlet property="surnameDetail" destination="qY4-eJ-Xq3" id="YEd-CG-Zwp"/>
+                        <outlet property="valoracionLabel" destination="FDf-er-CfF" id="O8u-k6-p5Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRy-Dw-aSe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -241,7 +259,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="sk7-Ln-Hor">
-                                <rect key="frame" x="0.0" y="88" width="414" height="319"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="376"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hOO-Mb-ffp">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
@@ -339,10 +357,26 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7WJ-2R-jeb">
+                                        <rect key="frame" x="0.0" y="342" width="414" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valoración" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbd-GX-wQP">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ATT-a4-qb9">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b77-KN-hD1">
-                                <rect key="frame" x="0.0" y="415" width="414" height="29"/>
+                                <rect key="frame" x="0.0" y="472" width="414" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -374,6 +408,7 @@
                         <outlet property="jobInput" destination="Qpe-tj-Dt3" id="G8Q-8e-hRO"/>
                         <outlet property="nameInput" destination="9fZ-Pb-Eyu" id="FlI-s6-wke"/>
                         <outlet property="surnameInput" destination="9K2-VD-ZK1" id="UmZ-9B-WhZ"/>
+                        <outlet property="valoracionInput" destination="ATT-a4-qb9" id="kTs-Gx-OPv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpZ-ki-ck5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -407,7 +442,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="FBL-l3-SFj">
-                                <rect key="frame" x="0.0" y="88" width="414" height="531"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="588"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iPe-0O-Q1m">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
@@ -520,6 +555,22 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fX3-RB-Ks7">
+                                        <rect key="frame" x="0.0" y="554" width="414" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valoración" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTb-6A-97S">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRZ-Yd-qBT">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="34"/>
+                                                <nil key="textColor"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQW-5m-XWA">
@@ -554,6 +605,7 @@
                         <outlet property="jobInput" destination="lKa-St-Obx" id="h7n-HZ-qzq"/>
                         <outlet property="nameInput" destination="NCE-oM-924" id="mAe-Zt-twF"/>
                         <outlet property="surnameInput" destination="hF5-XC-MfC" id="DBy-EW-IN9"/>
+                        <outlet property="valoracionInput" destination="aRZ-Yd-qBT" id="5EE-LQ-EaN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTE-Xk-ytp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

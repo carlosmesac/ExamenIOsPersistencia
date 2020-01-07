@@ -14,7 +14,7 @@ class MasterModel {
     
     
     func fillArray(completion: @escaping (Bool, [PersonItem]) -> Void){
-        let ref = Database.database().reference().child("users")
+        let ref = Database.database().reference().child("usersIOS")
         ref.observe(.value, with: { (snapshot) in
             
             var personArrayList1 : [PersonItem] = []

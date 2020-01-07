@@ -11,8 +11,9 @@ import UIKit
 import FirebaseDatabase
 class DetailModel{
     func delete(dni:String,completion:@escaping(Bool)->Void) {
-        var ref = Database.database().reference().child("users")
+        var ref = Database.database().reference().child("usersIOS")
         ref.child(dni).removeValue()
+        UserDefaults.standard.removeObject(forKey: dni)
         completion(false)
     }
 }

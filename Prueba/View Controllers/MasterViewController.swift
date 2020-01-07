@@ -46,8 +46,8 @@ class MasterViewController: UIViewController,UITableViewDataSource {
                   self!.personArrayList = array
                   if (indexPath.row < self!.personArrayList.count) {
                       DispatchQueue.main.async {
-                        cell?.textLabel?.text = array[indexPath.row].name
-                        cell?.detailTextLabel?.text = array[indexPath.row].dni
+                        cell?.textLabel?.text = "\(array[indexPath.row].name),DNI: \( array[indexPath.row].dni)"
+                        cell?.detailTextLabel?.text = "Valoracion :\(array[indexPath.row].valoracion)"
                               
                           }
                           

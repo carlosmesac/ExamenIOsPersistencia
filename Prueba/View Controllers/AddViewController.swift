@@ -17,6 +17,7 @@ class AddViewController: UIViewController {
     @IBOutlet weak var ageInput: UITextField!
     @IBOutlet weak var dniInput: UITextField!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var valoracionInput: UITextField!
     
     var addModel = AddModel()
     var name:String = ""
@@ -25,6 +26,8 @@ class AddViewController: UIViewController {
     var age:String = ""
     var job:String = ""
     var cv:String = ""
+    var valoracion: String = ""
+    
     var imagePicker:ImagePicker!
 
     override func viewDidLoad() {
@@ -49,9 +52,10 @@ class AddViewController: UIViewController {
         age = ageInput.text!
         job = jobInput.text!
         cv = cvInput.text!
-        addModel.validateFields(name: name, surname: surname, dni: dni, age: age, job: job, cv: cv,image: image.image!) { (error, String) in
+        valoracion = valoracionInput.text!
+        addModel.validateFields(name: name, surname: surname, dni: dni, age: age, job: job, cv: cv,image: image.image!,valoracion:valoracion) { (error, String) in
             if(!error){
-                self.addModel.addPerson(name: self.name, surname: self.surname, dni: self.dni, age: self.age, job: self.job, cv: self.cv,image: self.image.image!) { (error) in
+                self.addModel.addPerson(name: self.name, surname: self.surname, dni: self.dni, age: self.age, job: self.job, cv: self.cv,image: self.image.image!, valoracion: self.valoracion) { (error) in
                     if(!error){
                         let navBar = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.navController) as? UINavigationController
                                          

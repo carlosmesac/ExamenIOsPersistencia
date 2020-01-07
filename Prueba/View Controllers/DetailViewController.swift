@@ -10,6 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var valoracionLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var cvDetail: UILabel!
     @IBOutlet weak var ageDetail: UILabel!
@@ -34,7 +35,7 @@ class DetailViewController: UIViewController {
         ageDetail.text = person?.age ?? ""
         jobDetail.text = person?.job ?? ""
         cvDetail.text = person?.cv ?? ""
-        
+        valoracionLabel.text = person?.valoracion ?? ""
         let imageData: Data = UserDefaults.standard.object(forKey: person!.dni) as! Data
         image.image = UIImage(data:imageData)
         

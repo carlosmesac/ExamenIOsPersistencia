@@ -10,17 +10,17 @@ import Foundation
 import UIKit
 import FirebaseDatabase
 class EditModel{
-    func editPerson(name:String,surname:String,dni:String,age:String,job:String,cv:String, completion: @escaping (Bool) -> Void){
+    func editPerson(name:String,surname:String,dni:String,age:String,job:String,cv:String,valoracion:String, completion: @escaping (Bool) -> Void){
         let ref = Database.database().reference()
         ref.observeSingleEvent(of: .value) { (snapshot) in
-                let dictionary = ["name": name, "surname": surname, "dni": dni, "age": age, "job": job, "cv": cv]
-                ref.child("users").child(dni).setValue(dictionary)
+            let dictionary = ["name": name, "surname": surname, "dni": dni, "age": age, "job": job, "cv": cv, "valoracion": valoracion]
+                ref.child("usersIOS").child(dni).setValue(dictionary)
 
                 completion(false)
             }
         }
     
-    func validateFields(name: String,surname:String,dni:String,age:String,job:String,cv:String, completion: @escaping (Bool,String) -> Void ) {
+    func validateFields(name: String,surname:String,dni:String,age:String,job:String,cv:String, valoracion:String, completion: @escaping (Bool,String) -> Void ) {
         //comprobamos si los campos estan llenos
         if(name.trimmingCharacters(in: .whitespacesAndNewlines)=="" ||
             surname.trimmingCharacters(in: .whitespacesAndNewlines)=="" ||
@@ -29,8 +29,21 @@ class EditModel{
             
             completion(true,"Please fill in all fields")
         }else{
-            completion(false,"")
-            
+            switch valoracion {
+            case "1":
+                completion(false,"")
+            case "2":
+                completion(false,"")
+            case "3":
+                completion(false,"")
+            case "4":
+                completion(false,"")
+            case "5":
+                completion(false,"")
+            default:
+                completion(true,"make sure valoracion from 1 to 5")
+            }
+
         }
         
     }
